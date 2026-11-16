@@ -42,19 +42,28 @@ En el año **2358**, la Tierra es atacada por una raza alienígena capaz de mani
 ## 📂 Estructura del proyecto
 
 ```text
-Componentes/
-├── Esenas/
-│   ├── Bala/          # Proyectil del jugador
-│   ├── Bala Alien/    # Proyectil de las naves enemigas
-│   ├── Explocion/     # Animación y sonido de explosiones
-│   ├── Historia/      # Pantalla de lore y contexto del juego
-│   ├── HUD/           # Puntaje, pantalla de Game Over y Joystick táctil
-│   ├── Menu/          # Menú principal (Start, Historia, Exit)
-│   ├── Metioro/       # Obstáculos espaciales con 4 variantes
-│   ├── Nave Alien/    # Enemigos con IA básica de disparo y movimiento
-│   ├── Nave Roja/     # Nave controlada por el jugador
-│   └── Nivel/         # Escena principal, fondo parallax y spawners
-└── Tipografias/       # Fuentes pixel art y recursos DynamicFont
+Defensa-Orbital/
+├── App/                      # Ícono de la aplicación y branding del estudio (Dupster Studio)
+├── Componentes/
+│   ├── Esenas/
+│   │   ├── Bala/             # Proyectil del jugador
+│   │   ├── Bala Alien/       # Proyectil de las naves enemigas
+│   │   ├── Explocion/        # Animación y sonido de explosiones
+│   │   ├── Historia/         # Pantalla de lore y contexto del juego
+│   │   ├── HUD/              # Puntaje, pantalla de Game Over y Joystick táctil
+│   │   ├── Menu/             # Menú principal (Start, Historia, Exit)
+│   │   ├── Metioro/          # Obstáculos espaciales con 4 variantes
+│   │   ├── Nave Alien/       # Enemigos con IA básica de disparo y movimiento
+│   │   ├── Nave Roja/        # Nave controlada por el jugador
+│   │   └── Nivel/            # Escena principal, fondo parallax y spawners
+│   ├── Scripts/
+│   │   └── GLOBAL.gd         # Variables globales (puntaje) y utilidades aleatorias
+│   └── Tipografias/          # Fuentes pixel art y recursos DynamicFont
+├── default_env.tres          # Configuración del entorno por defecto de Godot
+├── export_presets.cfg        # Configuración de exportación del proyecto
+├── project.godot             # Archivo principal de configuración de Godot Engine
+├── LICENSE                   # Licencia MIT
+└── README.md                 # Documentación del proyecto
 ```
 
 ---
@@ -63,7 +72,7 @@ Componentes/
 
 1. Clona este repositorio en tu equipo:
    ```bash
-   git clone https://github.com/DyZer09/defensa-orbital.git
+   git clone https://github.com/Dani-Code117/Defensa-Orbital.git
    ```
 2. Abre **Godot Engine 3.x** (por ejemplo, Godot 3.5).
 3. Haz clic en **Importar** y selecciona el archivo `project.godot` en la raíz del proyecto.
@@ -73,7 +82,7 @@ Componentes/
 
 ## 👨‍💻 Créditos y Recursos de Terceros
 
-- **Desarrollo y Programación:** Daniel Valenzuela Orrantia (**Dupster Games**)
+- **Desarrollo, Programación y Arte:** Daniel Valenzuela Orrantia — **Dupster Studio**
 - **Música:** Patrick de Arteaga (*New Hope*, *Common Fight*, *Game Over*) — Licencia Creative Commons
 - **Tipografías:**
   - *8-BIT WONDER* por Joiro Hatagaya
@@ -81,3 +90,9 @@ Componentes/
   - *Nokia Cellphone FC* por Zeh Fernando (Fator Caos)
   - *Retro Gaming* por Vasily Draigo (Daymarius)
   - *Upheaval TT* por Brian Kent (Nigma Fonts)
+
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.

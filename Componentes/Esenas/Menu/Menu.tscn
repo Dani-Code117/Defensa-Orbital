@@ -38,7 +38,7 @@ autoplay = true
 texture = ExtResource( 2 )
 centered = false
 
-[node name="DupsteryG" type="Label" parent="."]
+[node name="Dupster Std" type="Label" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -48,7 +48,7 @@ margin_bottom = 12.0
 rect_scale = Vector2( 0.4, 0.4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Desarrollado por Dupster Games"
+text = "Desarrollado por Dupster Studio"
 align = 1
 valign = 1
 
