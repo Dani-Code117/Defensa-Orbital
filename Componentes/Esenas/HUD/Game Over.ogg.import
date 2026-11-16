@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Game Over.ogg-f139215dfbdbc567bc8baa043c42bae4.oggstr"
+
+[deps]
+
+source_file="res://Componentes/Esenas/HUD/Game Over.ogg"
+dest_files=[ "res://.import/Game Over.ogg-f139215dfbdbc567bc8baa043c42bae4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

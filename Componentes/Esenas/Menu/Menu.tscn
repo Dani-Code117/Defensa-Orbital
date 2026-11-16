@@ -1,0 +1,134 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Componentes/Esenas/Menu/New Hope.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Componentes/Esenas/Menu/Fondo Menu.png" type="Texture" id=2]
+[ext_resource path="res://Componentes/Tipografias/8-BIT WONDER.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Componentes/Tipografias/Preechas/estilo de botones.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Componentes/Tipografias/NokiaCellphoneFC.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Componentes/Esenas/Menu/Menu.gd" type="Script" id=6]
+[ext_resource path="res://Componentes/Tipografias/Preechas/Menu.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Componentes/Esenas/Historia/Historia.tscn" type="PackedScene" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 2
+font_data = ExtResource( 3 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -10.0
+autoplay = true
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="DupsteryG" type="Label" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = -8.0
+margin_right = 328.0
+margin_bottom = 12.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Desarrollado por Dupster Games"
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -34.0
+margin_right = 48.0
+margin_bottom = 34.0
+grow_vertical = 2
+alignment = 1
+
+[node name="Defensa" type="Label" parent="VBoxContainer"]
+margin_right = 96.0
+margin_bottom = 12.0
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_fonts/font = ExtResource( 7 )
+text = "Defensa"
+align = 1
+valign = 1
+
+[node name="Orbital" type="Label" parent="VBoxContainer"]
+margin_top = 16.0
+margin_right = 96.0
+margin_bottom = 28.0
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Orbital"
+align = 1
+valign = 1
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 48.0
+custom_colors/font_color_hover = Color( 0.32549, 0.745098, 1, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "Start"
+flat = true
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+margin_top = 52.0
+margin_right = 96.0
+margin_bottom = 68.0
+custom_colors/font_color_hover = Color( 0.32549, 0.745098, 1, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "Exit"
+flat = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_top = 1.5
+anchor_bottom = 1.5
+margin_top = -96.0
+margin_right = 144.0
+margin_bottom = -3.05176e-05
+color = Color( 0, 0, 0, 1 )
+
+[node name="HistoriaButton" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -57.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0.631373, 0.972549, 1, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "Historia"
+flat = true
+
+[node name="Historia" parent="." instance=ExtResource( 8 )]
+position = Vector2( 0, -128 )
+
+[node name="Salida" type="Button" parent="Historia"]
+margin_right = 144.0
+margin_bottom = 128.0
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="HistoriaButton" to="." method="_on_HistoriaButton_pressed"]
+[connection signal="pressed" from="Historia/Salida" to="." method="_on_Salida_pressed"]
