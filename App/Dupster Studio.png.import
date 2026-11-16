@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo Dupstery v2.0.png-600927fa9c48769df0d83f4789b01402.stex"
+path="res://.import/Dupster Studio.png-476e7cd23200a0a03cf80cfc95eddf62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Logo Dupstery v2.0.png"
-dest_files=[ "res://.import/Logo Dupstery v2.0.png-600927fa9c48769df0d83f4789b01402.stex" ]
+source_file="res://App/Dupster Studio.png"
+dest_files=[ "res://.import/Dupster Studio.png-476e7cd23200a0a03cf80cfc95eddf62.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DupsterGames.png-10d0d95241500c01f4b2754b6467022a.stex"
+path="res://.import/Icon.png-3dd850cbc65a5e23ac92f4006ee63649.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DupsterGames.png"
-dest_files=[ "res://.import/DupsterGames.png-10d0d95241500c01f4b2754b6467022a.stex" ]
+source_file="res://App/Icon.png"
+dest_files=[ "res://.import/Icon.png-3dd850cbc65a5e23ac92f4006ee63649.stex" ]
 
 [params]
 

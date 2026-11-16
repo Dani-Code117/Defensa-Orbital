@@ -12,13 +12,13 @@ config_version=4
 
 config/name="Defensa Orbital"
 run/main_scene="res://Componentes/Esenas/Menu/Menu.tscn"
-boot_splash/image="res://DupsterGames.png"
+boot_splash/image="res://App/Dupster Studio.png"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
-config/icon="res://Icon.png"
+config/icon="res://App/Icon.png"
 
 [autoload]
 
-GLOBAL="*res://GLOBAL.gd"
+GLOBAL="*res://Componentes/Scripts/GLOBAL.gd"
 
 [display]
 
